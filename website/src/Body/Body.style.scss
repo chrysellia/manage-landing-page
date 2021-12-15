@@ -1,0 +1,54 @@
+.body-page {
+    .body-wrapper {
+        padding: 3rem 4rem;
+        display: flex;
+
+        .body-content {
+            flex: auto;
+
+            .body-title {
+                color: hsl(228, 39%, 23%);
+                font-weight: 700;
+                font-size: 50px;
+            }
+
+            .body-description {
+                color: hsl(227, 12%, 61%);
+                font-size: 16px;
+            }
+        }
+
+        .body-services {
+            .services-wrapper {
+                .services-card {
+                    padding-bottom: 2rem;
+                    
+                    .services-title {
+                        display: flex;
+
+                        .services-rank {
+                            color: white;
+                            background-color: hsl(12, 88%, 59%);
+                            border-radius: 1rem;
+                            padding: 0.2rem 0.3rem;
+                            width: 40px;
+                            text-align: center;
+                        }
+
+                        .main-title {
+                            color: hsl(228, 39%, 23%);
+                            font-weight: 700;
+                            font-size: 18px;
+                            padding-left: 1rem;
+                        }
+                    }
+
+                    .services-description {
+                        color: hsl(227, 12%, 61%);
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
