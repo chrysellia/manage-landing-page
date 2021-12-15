@@ -1,0 +1,33 @@
+.footer-page {
+    background-color: hsl(233, 12%, 13%);
+
+    .footer-wrapper {
+        padding: 3rem 4rem;
+        color: white;
+        display: flex;
+
+        .first-bloc {
+            flex: auto;
+
+            .footer-logo {
+                padding-bottom: 3rem;
+            }
+            .footer-media {
+                display: flex;
+                
+
+                .media-item {
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+
+        .footer-menu {
+            flex: auto;
+        }
+
+        .other-menu {
+            flex: auto;
+        }
+    }
+}
