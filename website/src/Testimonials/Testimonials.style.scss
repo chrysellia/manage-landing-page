@@ -1,0 +1,66 @@
+.testimonials-page {
+    .testimonials-wrapper {
+
+        .testimonials-title {
+            text-align: center;
+            color: hsl(228, 39%, 23%);
+            font-weight: 700;
+            font-size: 50px;
+        }
+
+        .card-wrapper {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem 4rem;
+
+            .testimonials-card {
+                position: relative;
+                width: 33%;
+                // text-align: center;
+                padding-right: 2rem;
+                border: 1px solid hsl(0, 0%, 98%);
+                background-color: hsl(0, 0%, 98%);
+                margin-right: 2rem;
+                
+
+                .card-image {
+                    img {
+                        position: absolute;
+                        top: -25px;
+                        right: 150px;
+                        width: 50px;
+                    }
+                }
+
+                .card-title {
+                    color: hsl(228, 39%, 23%);
+                    font-weight: 700;
+                    font-size: 18px;
+                    padding-top: 3rem;
+                }
+
+                .card-content {
+                    color: hsl(227, 12%, 61%);
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .testimonials-button {
+            text-align: center;
+
+            .button-style {
+                .button-text {
+                    color: white;
+                    background-color: hsl(12, 88%, 59%);
+                    border-radius: 3rem;
+                    padding: 0.6rem 1rem;
+                    width: 110px;
+                    text-align: center;
+                }
+            }
+        }
+        
+    }
+}
