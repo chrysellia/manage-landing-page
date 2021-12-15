@@ -1,0 +1,29 @@
+.prefooter-page {
+    background-color: hsl(12, 88%, 59%);
+    
+    .prefooter-wrapper {
+        display: flex;
+        padding: 3rem 4rem;
+        
+
+        .prefooter-title {
+            flex: auto;
+            color: white;
+            font-weight: 700;
+            font-size: 35px;
+        }
+
+        .prefooter-button {
+            .prefooter-style {
+                .prefooter-text {
+                    color: hsl(12, 88%, 59%);
+                    background-color: white;
+                    border-radius: 3rem;
+                    padding: 0.6rem 1rem;
+                    width: 110px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
