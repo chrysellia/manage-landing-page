@@ -1,0 +1,42 @@
+.navbar-page {
+    .navbar-wrapper {
+        padding: 3rem 4rem;
+
+        .navbar-content {
+            display: flex;
+            align-items: center;
+
+            .navbar-logo {
+                flex:auto;
+            }
+
+            .navbar-menu {
+                flex:auto;
+
+                .list-menu {
+                    display: flex;
+                    
+
+                    .menu-item {
+                        color: hsl(228, 39%, 23%);
+                        font-weight: 500;
+                        padding-right: 2rem;
+                    }
+                }
+            }
+
+            .button-wrapper {
+                .navbar-started {
+                    .started-button {
+                        color: white;
+                        background-color: hsl(12, 88%, 59%);
+                        border-radius: 3rem;
+                        padding: 0.6rem 1rem;
+                        width: 110px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
