@@ -1,9 +1,11 @@
 .prefooter-page {
     background-color: hsl(12, 88%, 59%);
     
+    
     .prefooter-wrapper {
         display: flex;
         padding: 3rem 4rem;
+        overflow: hidden;
         
 
         .prefooter-title {
@@ -11,6 +13,12 @@
             color: white;
             font-weight: 700;
             font-size: 35px;
+        }
+
+        .prefooter-background {
+            position: absolute;
+            z-index: 25;
+            transform: translateY(-50%);
         }
 
         .prefooter-button {

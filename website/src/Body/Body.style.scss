@@ -16,6 +16,12 @@
                 color: hsl(227, 12%, 61%);
                 font-size: 16px;
             }
+
+            .body-background {
+                position: absolute;
+                left: 0;
+                transform: translateY(5%) translateX(-60%);
+            }
         }
 
         .body-services {
