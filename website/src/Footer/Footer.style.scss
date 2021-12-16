@@ -24,10 +24,48 @@
 
         .footer-menu {
             flex: auto;
+
+            .menu-item {
+                padding-bottom: 5px;
+                color: hsl(0, 0%, 98%);
+            }
         }
 
         .other-menu {
             flex: auto;
+
+            .other-item {
+                padding-bottom: 5px;
+            }
         }
+
+        .bloc-wrapper {
+            .button-bloc {
+                display: flex;
+                padding-bottom: 2rem;
+
+                .input-update {
+                    padding-right: 1rem;
+                    .input-box {
+                        border-radius: 3rem;
+                        padding: 1rem 1rem;
+                    }
+                }
+
+                .go-button {
+                    color: white;
+                    font-weight: 700;
+                    background-color: hsl(12, 88%, 59%);
+                    border-radius: 3rem;
+                    padding: 0.6rem 1rem;
+                    width: 40px;
+                    text-align: center;
+                }
+            }
+
+            .text-copyright {
+                color: hsl(227, 12%, 61%);
+            }
+        } 
     }
 }
