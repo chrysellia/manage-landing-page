@@ -7,7 +7,7 @@ const Body = () => {
             <div className="body-wrapper">
 
                 <div className="body-content">
-                    <div className="body-title">What's different about <br/> Manage?</div>
+                    <div className="body-title">What's different about Manage?</div>
                     <div className="body-description">
                         <p>
                             Manage provides all the functionality your <br/>
@@ -17,7 +17,7 @@ const Body = () => {
                         </p>
                     </div>
                     <div className="body-background">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="814" height="814"><rect width="436" height="970" x="774" y="-62" fill="#FFF0EC" fill-rule="evenodd" rx="218" transform="rotate(45 718.814 -291.157)"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="302"><rect width="310.431" height="708" x="-357" y="-17" fill="#FFF0EC" fill-rule="evenodd" opacity=".071" rx="155.215" transform="scale(1 -1) rotate(-45 -951.398 26.5)"/></svg>
                     </div>
                 </div>
 
