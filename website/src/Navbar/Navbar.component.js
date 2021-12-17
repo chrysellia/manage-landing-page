@@ -2,6 +2,21 @@ import React from 'react'
 import './Navbar.style.scss'
 
 const Navbar = () => {
+    const [show, toggleShow] = React.useState(false);
+    const menuRef = React.useRef(null);
+
+    const handleClick = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            toggleShow(false);
+        }
+    };
+
+    React.useEffect(() => {
+        document.addEventListener('click', handleClick, true);
+
+        return () => document.removeEventListener('click', handleClick, true);
+    });
+
     return (
         <div className="navbar-page">
             <div className="navbar-wrapper">
@@ -17,20 +32,41 @@ const Navbar = () => {
                     </div>
 
                     {/* Menu */}
-                    <div className="navbar-menu">
-                        <div className="list-menu">
-                            <div className="menu-item">Pricing</div>
-                            <div className="menu-item">Product</div>
-                            <div className="menu-item">About us</div>
-                            <div className="menu-item">Careers</div>
-                            <div className="menu-item">Community</div>
+                    <div className="navbar-desktop">
+                        <div className="navbar-menu">
+                            <div className="list-menu">
+                                <div className="menu-item">Pricing</div>
+                                <div className="menu-item">Product</div>
+                                <div className="menu-item">About us</div>
+                                <div className="menu-item">Careers</div>
+                                <div className="menu-item">Community</div>
+                            </div>
                         </div>
-                    </div>
 
-                    {/* Get Started */}
-                    <div className="button-wrapper">
-                        <div className="navbar-started">
-                            <div className="started-button">Get started</div>
+                        {/* Get Started */}
+                        <div className="button-wrapper">
+                            <div className="navbar-started">
+                                <div className="started-button">Get started</div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div className="navbar-mobile">
+                        <div className="menu-icon" onClick={() => toggleShow(true)}>
+                            { show ? 
+                                (<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"><path fill="#242D52" fill-rule="evenodd" d="M17.925.747l2.828 2.828L13.328 11l7.425 7.425-2.828 2.828-7.425-7.425-7.425 7.425-2.828-2.828L7.671 11 .247 3.575 3.075.747 10.5 8.171 17.925.747z"/></svg>)
+                                : (<svg xmlns="http://www.w3.org/2000/svg" width="25" height="18"><g fill="hsl(228, 39%, 23%)" fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>)
+                            }
+                        </div>
+
+                        <div className="menu-wrapper">
+                            <div ref={menuRef} className={`menu-bloc ${show ? 'show' : 'hide'}`}>
+                                <div className="item-bloc">Pricing</div>
+                                <div className="item-bloc">Product</div>
+                                <div className="item-bloc">About us</div>
+                                <div className="item-bloc">Careers</div>
+                                <div className="item-bloc">Community</div>
+                            </div>
                         </div>
                     </div>
                 </div>

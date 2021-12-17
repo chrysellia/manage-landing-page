@@ -10,30 +10,102 @@
                 flex:auto;
             }
 
-            .navbar-menu {
-                flex:auto;
+            .navbar-desktop {
+                display: block;
 
-                .list-menu {
-                    display: flex;
-                    
-
-                    .menu-item {
-                        color: hsl(228, 39%, 23%);
-                        font-weight: 500;
-                        padding-right: 2rem;
+                .navbar-menu {
+                    flex:auto;
+    
+                    .list-menu {
+                        display: flex;
+                        
+    
+                        .menu-item {
+                            color: hsl(228, 39%, 23%);
+                            font-weight: 500;
+                            padding-right: 2rem;
+                        }
                     }
                 }
-            }
+    
+                .button-wrapper {
+                    .navbar-started {
+                        .started-button {
+                            color: white;
+                            background-color: hsl(12, 88%, 59%);
+                            border-radius: 3rem;
+                            padding: 0.6rem 1rem;
+                            width: 110px;
+                            text-align: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            } 
 
-            .button-wrapper {
-                .navbar-started {
-                    .started-button {
-                        color: white;
-                        background-color: hsl(12, 88%, 59%);
-                        border-radius: 3rem;
-                        padding: 0.6rem 1rem;
-                        width: 110px;
-                        text-align: center;
+            .navbar-mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-page {
+        .navbar-wrapper {
+            padding: 2rem 2rem;
+    
+            .navbar-content {
+                display: flex;
+                align-items: center;
+    
+                .navbar-logo {
+                    flex:auto;
+                }
+    
+                .navbar-desktop {
+                    display: none;   
+                } 
+
+                .navbar-mobile {
+                    display: block;
+
+                    .menu-wrapper {
+                        position: absolute;
+                        left: 0px;
+                        top: 80px;
+                        width: 100%;
+
+                        .menu-icon {
+                            position: relative;
+                        }
+
+                        .menu-bloc {
+                            position: relative;
+                            height: 225px;
+                            margin: 0 2rem;
+                            background-color: white;
+                            padding: 2rem 4rem;
+
+                            &.show {
+                                transform: scale(1);
+                                transition: all ease-in 300ms;
+                                transform-origin: top;
+                            }
+    
+                            &.hide {
+                                transform: scale(1, 0);
+                                transition: all ease-out 300ms;
+                                transform-origin: top;
+                            }
+
+                            .item-bloc {
+                                text-align: center;
+                                color: hsl(228, 39%, 23%);
+                                font-weight: 500;
+                                padding-bottom: 1rem;
+                            }
+                        }
                     }
                 }
             }
