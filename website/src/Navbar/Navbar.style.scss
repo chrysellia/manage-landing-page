@@ -11,7 +11,7 @@
             }
 
             .navbar-desktop {
-                display: block;
+                display: flex;
 
                 .navbar-menu {
                     flex:auto;
@@ -83,7 +83,7 @@
                         .menu-bloc {
                             position: relative;
                             height: 225px;
-                            margin: 0 2rem;
+                            margin: 1.5rem 2rem;
                             background-color: white;
                             padding: 2rem 4rem;
 

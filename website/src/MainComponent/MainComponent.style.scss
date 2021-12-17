@@ -16,3 +16,20 @@
         position: relative;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .main-wrapper {
+        width: 100%;
+        overflow: hidden;
+
+        .main-background {
+            position: relative;
+
+            .background-vector {
+                position: absolute;
+                right: 0;
+                transform: translateY(-30%) translateX(50%);
+            }
+        }
+    }
+}
